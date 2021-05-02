@@ -41,7 +41,7 @@ jobs:
           release: bookinfo-${{ env.ENV_NAME }}-ratings
           namespace: student39-bookinfo-${{ env.ENV_NAME }}
           chart: k8s/helm
-          value-files: k8s/helm-values/values-bookinfo-${{ env.ENV_NAME }}-ratings.yaml
+          value-files: k8s/helm-values/values-bookinfo- ${{ env.ENV_NAME }} -ratings.yaml
           values: |
             {
               "extraEnv": {
@@ -53,4 +53,4 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Acceptance test
-        run: curl "http://bookinfo.${{ env.ENV_NAME }}.opsta.net/student39/ratings/health" | grep "Ratings is working"
+        run: curl "http://bookinfo. ${{ env.ENV_NAME }} .opsta.net/student39/ratings/health" | grep "Ratings is working"
