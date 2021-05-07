@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> c3ac2ceb3ddc23ae23e4b676658253ba1ad3ca27
 apiVersion: apps/v1
 kind: Deployment
 metadata:
