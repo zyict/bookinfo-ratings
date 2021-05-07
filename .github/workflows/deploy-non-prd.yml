@@ -20,7 +20,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ghcr.io/[USERNAME]/bookinfo-ratings:${{ env.ENV_NAME }}
+          tags: ghcr.io/zyict/bookinfo-ratings:${{ env.ENV_NAME }}
   deploy:
     needs: build
     runs-on: ubuntu-20.04
